@@ -2,7 +2,7 @@ var Express = require('express'),
 	bodyParser = require('body-parser'),
 	app = Express();
 
-var port = 9030;
+var port = process.env.EXPRESS_PORT || 9030;
 
 
 app.use(Express.static(__dirname + '/public'));
