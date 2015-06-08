@@ -1,19 +1,14 @@
 import React from 'react';
 window.React = React;
 
-class Main extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {};
-  }
-  render(){
-    return (
-      <div className='flex flex-column'>
-    		<img src='/assets/images/logo.jpg' id='logo' />
-    		<p id='by'>By David Turner</p>
-    	</div>
-    )
-  }
-}
+import Router from 'react-router';
 
-React.render(<Main />, document.getElementById('app'));
+import routes from './config/routes.jsx';
+
+Router.run(routes, function(Handler){
+  React.render(<Handler />, document.getElementById('app'));
+});
+
+
+
+// "colorScheme": "https://color.adobe.com/Turquoise-Blue-White-color-theme-6051005/"

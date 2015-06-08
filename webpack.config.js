@@ -9,7 +9,7 @@ module.exports = {
      './public/app/app.jsx'
    ], 
    output: {
-     path: __dirname + '/public/app',
+     path: __dirname + '/public',
      filename: 'bundle.js',
      publicPath: '/'
    },
@@ -18,8 +18,8 @@ module.exports = {
    },                                  
    module: {
      loaders: [
-       { test: /\.jsx$/, loader: 'babel-loader', exclude: [/node_modules/] }
-     ]
+       { test: /\.jsx$/, loader: 'babel-loader', exclude: [/node_modules/]  }
+      ]
    },                           
   devtool: 'eval'
 };

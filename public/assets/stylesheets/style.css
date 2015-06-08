@@ -1,9 +1,13 @@
+body {
+  padding: 40px;
+}
 * {
-	color: #eee;
+	color: #ECF0F1;
 	font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 html {
-	background: #222;
+	background: #2D3E4F;
 	min-width: 320px;
 }
 .flex {
@@ -33,4 +37,23 @@ html {
 #by {
 	text-align: right;
 	padding-right: 15px;
+}
+.links > * {
+  margin-left: 12px;
+}
+a {
+  padding-bottom: 0px;
+  text-decoration: none;
+  border-bottom: 1px solid #ECF0F1;
+  line-height: 1rem;
+}
+a:hover {
+  border-bottom: 1px solid #1BBC9B;
+}
+.container {
+  margin: 70px auto;
+  max-width: 1500px;
+  background-color: #34495E;
+  padding: 15px;
+  box-shadow: 6px 6px 20px -1px black;
 }
